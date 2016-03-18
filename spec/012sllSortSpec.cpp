@@ -11,7 +11,7 @@ namespace spec
 	public:
 		struct node * createNode(int n1) {
 			struct node *newNode = (struct node *)malloc(sizeof(struct node));
-			newNode->data= n1;
+			newNode->data = n1;
 			newNode->next = NULL;
 			return newNode;
 		}
@@ -35,7 +35,7 @@ namespace spec
 			int index = 0;
 			struct node *temp = head;
 			for (index = 0; index < len; index++){
-				if (temp-> data != nums[index]){
+				if (temp->data != nums[index]){
 					return  0;
 				}
 				temp = temp->next;
@@ -46,7 +46,7 @@ namespace spec
 		{
 			int num = 0;
 			struct node *head = NULL;
-			int num_array[100] = {0,0,0,1,1,1,2,2,2,2};
+			int num_array[100] = { 0, 0, 0, 1, 1, 1, 2, 2, 2, 2 };
 			int output[100] = { 0, 0, 0, 1, 1, 1, 2, 2, 2, 2 };
 			int len = 10;
 			int i = 0;
@@ -62,8 +62,8 @@ namespace spec
 		{
 			int num = 0;
 			struct node *head = NULL;
-			int num_array[100] = { 0, 0, 0,0,0,0,0,0,0,0 };
-			int output[100] = { 0, 0, 0, 0,0,0,0,0,0,0};
+			int num_array[100] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+			int output[100] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 			int len = 10;
 			int i = 0;
 			for (i = 0; i<10; i++)
@@ -78,8 +78,8 @@ namespace spec
 		{
 			int num = 0;
 			struct node *head = NULL;
-			int num_array[100] = { 2,2,2,1,1,1,0,0,0};
-			int output[100] = { 0,0,0,1,1,1,2,2,2 };
+			int num_array[100] = { 2, 2, 2, 1, 1, 1, 0, 0, 0 };
+			int output[100] = { 0, 0, 0, 1, 1, 1, 2, 2, 2 };
 			int len = 9;
 			int i = 0;
 			for (i = 0; i<len; i++)
@@ -94,8 +94,8 @@ namespace spec
 		{
 			int num = 0;
 			struct node *head = NULL;
-			int num_array[100] = {1,2,1,1,1,2,2,0,0,0,2,1};
-			int output[100] = { 0, 0, 0,1,1,1,1,1,2,2,2,2};
+			int num_array[100] = { 1, 2, 1, 1, 1, 2, 2, 0, 0, 0, 2, 1 };
+			int output[100] = { 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2 };
 			int len = 12;
 			int i = 0;
 			for (i = 0; i<len; i++)
